@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- HTML SETTINGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celao Lanches</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="cover"></div>
+    <header>
+        <h2>Celao's Burguer</h2>
+        <p>O melhor hambuguer de Sao Paulo</p>
+    </header>
+    <main>
+        <!-- ITENS AQUI -->
+    </main>
+    <div id="resumo-pedido">
+        <h2 class="seu-pedido">Seu pedido</h2>
+        <div id="resumo-itens">
+            <!-- itens aqui -->
+        </div>
+        
+        <span class="vertical-line"></span>
+
+        <div class="resumo-pedido-item">
+            <h3>Total:</h3>
+            <h3 class="resumo-pedido-item-preco align-right" id="resumo-pedido-item-preco">R$23,99</h3>
+        </div>
+        <button class="finalizar-btn" id="finalizar-btn">Finalizar pedido</button>
+    </div>
+
+    <div class="modal" id="modal-pagamento">
+        <h3>Dados de pagamento:</h3>
+        <table id="modal-pagamento">
+            <input name="credit-name" class="cc-name" type="text" placeholder="Seu nome" required>
+            <input name="credit-number" class="cc-number" type="tel" pattern="\d*" maxlength="19" placeholder="Numero do cartao" required>
+            <input name="credit-expires" class="cc-expires" type="tel" pattern="\d*" maxlength="7" placeholder="MM / YY" required>
+            <input name="credit-cvc" class="cc-cvc" type="tel" pattern="\d*" maxlength="4" placeholder="CVC" required>
+            <button type="submit" class="submit-btn" id="submit-btn">Finalizar</button>
+        </table>
+    </div>
+
+    <div class="modal" id="modal-avaliacao">
+        <h3>Gostaria de nos avaliar?</h3>
+        <div class="estrelas">
+            <i class="fa-solid fa-burger s1"></i>
+            <i class="fa-solid fa-burger s2"></i>
+            <i class="fa-solid fa-burger s3"></i>
+            <i class="fa-solid fa-burger s4"></i>
+            <i class="fa-solid fa-burger s5"></i>
+        </div>
+        <div class="labels">
+            <p>ruim</p>
+            <p>otimo</p>
+        </div>
+        
+    </div>
+
+    <div class="thanks" id="thanks">
+        <p>Obrigado pela sua compra!</p>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
